@@ -39,4 +39,4 @@ const fileTodo = function (fileName) {
     appendFiles(fileName)
 }
 
-fileTodo('masonry1') //在这写入需要增加的页面名称（以personal为例）
+fileTodo('product') //在这写入需要增加的页面名称（以personal为例）

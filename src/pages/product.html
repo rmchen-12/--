@@ -50,21 +50,39 @@
         <!--header end-->
 
         <!--container start-->
-        <div class="contentWrap index">
-            <div class="main_box">
-                <div class="arrival_banner swiper-container">
-                    <div class="swiper-wrapper">
+        <div class="contentWrap product">
+            <div class="common_content swiper-container">
+                <div class="second_nav">
 
-                    </div>
-                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="arrival_slide swiper-container ">
-                    <div class="swiper-wrapper swiper-wrapper1">
+                <div class="product_show swiper-wrapper">
+                    <div class="swiper-slide" id="f_integral">
+                        <ul class="product1 clearFix">
 
+                        </ul>
+                        <div class="loadMore">
+                            <p>加载更多</p>
+                            <img src="./assets/image/loading.gif" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="common_box">
+                    <div class="swiper-slide" id="t_integral">
+                        <ul class="product2 clearFix">
 
+                        </ul>
+                        <div class="loadMore">
+                            <p>加载更多</p>
+                            <img src="./assets/image/loading.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" id="o_integral">
+                        <ul class="product3 clearFix">
+
+                        </ul>
+                        <div class="loadMore">
+                            <p>加载更多</p>
+                            <img src="./assets/image/loading.gif" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,36 +96,19 @@
 
     </div>
     <!--main end-->
-
-    <script id="swiper-list" type="text/html">
-        {{each list as value i}}
-        <div class="swiper-slide">
-            <a href="javascript:">
-                <img src="{{value.img_url}}" alt="">
+    <script id="content" type="text/html">
+        {{each list}}
+        <li class="proBox">
+            <a href="exchange_show.html">
+                <div class="img_show">
+                    <img src="{{$value.img_url}}" alt="">
+                </div>
+                <div class="content_show">
+                    <p>{{$value.content}}</p>
+                </div>
             </a>
-        </div>
+        </li>
         {{/each}}
-    </script>
-
-    <script id="swiper-list1" type="text/html">
-        {{each list as value i}}
-        <div class="swiper-slide">
-            <a href="javascript:">
-                <img class="banner" src="{{value.img_url}}" alt="">
-            </a>
-        </div>
-        {{/each}}
-    </script>
-
-    <script id="common" type="text/html">
-        <ul>
-            {{each list }}
-            <li>
-                <img src="{{$value.img_url}}" alt="">
-                <p>{{$value.title}}</p>
-            </li>
-            {{/each}}
-        </ul>
     </script>
 
     <script src="../api/api.js"></script>

@@ -34,8 +34,7 @@ textarea {
 
 body {
     line-height: 1;
-    background-color: #fff;
-    // position: relative;
+    background-color: #fff; // position: relative;
 }
 
 ol,
@@ -67,4 +66,10 @@ input:focus {
 
 select {
     appearance: listbox;
+}
+
+.clearFix:after {
+    content: '';
+    display: block;
+    clear: both; 
 }

@@ -1,0 +1,42 @@
+.product {
+    margin-top: 100px;
+    .swiper-container {
+        .second_nav {
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            .swiper-pagination-bullet {
+                width: 33.33%;
+                height: 0;
+                position: relative;
+                margin: 0;
+            }
+        }
+        .product_show {
+            // height: auto !important;
+            .swiper-slide {
+                ul {
+                    li {
+                        float: left;
+                        width: 50%;
+                        height: 400px;
+                        overflow: hidden;
+                        a{
+                            .img_show{
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    opacity: 0;
+                                    transition: all ease 1s;
+                                    &.fade-in{
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
