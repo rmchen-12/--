@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="雨飞设计" />
+    <meta name="description" content="雨飞设计" />
+    <meta name="author" content="技术支持：雨飞设计www.yfd.com.cn" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/image/yfd-icon-iphone.png" />
+    <!--iPhone  150x150 像素-->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/image/yfd-icon-ipad.png" />
+    <!--iPad  300x300 像素-->
+    <title>雨飞设计</title>
+    <script src="./lib/buggyfill.js"></script>
+    <script>
+        window.onload = function () {
+            window.viewportUnitsBuggyfill.init({
+                hacks: window.viewportUnitsBuggyfillHacks
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <!--loading start-->
+    <div class="loading_wrap">
+        <div class="loader">
+            <div class="loader-inner ball-pulse">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!--loading end-->
+
+    <!--main start-->
+    <div class="all_main">
+
+        <!--header start-->
+        <div class="headerWrap">
+
+        </div>
+        <!--header end-->
+
+        <!--container start-->
+        <div class="contentWrap infiniteLoading">
+            <div class="main">
+                <div class="common_content">
+                    <ul class="clearFix brand_info_box">
+
+                    </ul>
+                </div>
+                <div class="loadMore">
+                    <p>加载更多</p>
+                    <img src="./assets/image/loading.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <!--container end-->
+
+        <!--footer start-->
+        <div class="footerWrap">
+
+        </div>
+        <!--footer end-->
+
+    </div>
+    <!--main end-->
+
+    <script id="infinite-loading" type="text/html">
+        {{each list}}
+        <li class="proBox">
+            <a href="#">
+                <div class="img_show">
+                    <img src="{{$value.img_url}}" alt="">
+                </div>
+                <div class="news_box">
+                    <p class="intro_txt">
+                        <span class="txt">
+                            {{$value.title}}
+                        </span>
+                    </p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="../api/api.js"></script>
+    <script src="../lib/art-template/index.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,30 @@
+.index {
+    margin-top: 100px;
+    .arrival_slide {
+        margin-top: 20px;
+        .swiper-container {
+            width: 100%;
+            height: 100px;
+        }
+        .swiper-slide {
+            width: 40%;
+            a {
+                display: block;
+                margin-right: 10px;
+                img {
+                    height: 200px;
+                }
+            }
+        }
+        .swiper-slide:nth-child(1) {
+            width: 80%;
+        }
+    }
+    .common_box {
+        margin-top: 20px;
+        li {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+}

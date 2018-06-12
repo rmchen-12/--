@@ -1,0 +1,70 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+a,
+abbr,
+em,
+img,
+b,
+i,
+ol,
+ul,
+li,
+form,
+textarea {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    box-sizing: border-box;
+    font-family: '微软雅黑';
+}
+
+textarea {
+    resize: none;
+}
+
+body {
+    line-height: 1;
+    background-color: #fff;
+    // position: relative;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #000;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    width: 100%;
+    content: normal !important;
+}
+
+input:focus {
+    outline: none;
+}
+
+select {
+    appearance: listbox;
+}

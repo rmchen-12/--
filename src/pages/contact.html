@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="雨飞设计" />
+    <meta name="description" content="雨飞设计" />
+    <meta name="author" content="技术支持：雨飞设计www.yfd.com.cn" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/image/yfd-icon-iphone.png" />
+    <!--iPhone  150x150 像素-->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/image/yfd-icon-ipad.png" />
+    <!--iPad  300x300 像素-->
+    <title>雨飞设计</title>
+    <script src="./lib/buggyfill.js"></script>
+    <script>
+        window.onload = function () {
+            window.viewportUnitsBuggyfill.init({
+                hacks: window.viewportUnitsBuggyfillHacks
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <!--loading start-->
+    <div class="loading_wrap">
+        <div class="loader">
+            <div class="loader-inner ball-pulse">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!--loading end-->
+
+    <!--main start-->
+    <div class="all_main">
+
+        <!--header start-->
+        <div class="headerWrap">
+
+        </div>
+        <!--header end-->
+
+        <!--container start-->
+        <div class="contentWrap contact">
+            <div class="common_banner">
+
+            </div>
+            <div class="contact_info">
+
+            </div>
+            <div class="contact_box">
+                <form>
+                    <div class="info_content">
+                        <div class="item">
+                            <input type="text" id="email" placeholder="Your  Email">
+                        </div>
+                        <div class="item">
+                            <input type="text" id="username" placeholder="Your  Name">
+                        </div>
+                        <div class="item">
+                            <textarea name="" id="msg" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="btn_large">
+                        <div id="submit">提交</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--container end-->
+
+        <!--footer start-->
+        <div class="footerWrap">
+
+        </div>
+        <!--footer end-->
+
+        <!-- 留言弹窗开始 -->
+        <div class="fbalert">
+            <a class="closer" href="javascript:void(0);"></a>
+            <img src="./assets/image/icons/icon_ok.png" alt="ok">
+            <h1>发送成功，感谢您的留言！</h1>
+            <div class="autocounter">
+                <span>3</span>&nbsp;秒后自动关闭</div>
+            <a class="btn-ok" href="javascript:void(0);">确定</a>
+        </div>
+        <!-- 留言弹窗结束 -->
+
+    </div>
+    <!--main end-->
+    <script id="banner" type="text/html">
+        <img src="{{list.img_url}}" alt="图片未找到">
+    </script>
+    <script id="content" type="text/html">
+        {{@ list.content}}
+    </script>
+    <script src="../api/api.js"></script>
+    <script src="../lib/art-template/index.js"></script>
+</body>
+
+</html>
